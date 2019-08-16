@@ -1,0 +1,20 @@
+menu "SoftAP config"
+    
+    config ESP_WIFI_AP_SSID
+        string "WiFi AP SSID"
+        default "myssid"
+        help
+            AP SSID (network name) for the example to connect to.
+
+    config ESP_WIFI_AP_PASSWORD
+        string "WiFi AP Password"
+        default "mypassword"
+        help
+            WiFi AP password (WPA or WPA2) for the example to use.
+
+    config ESP_MAX_STA_CONN
+        int "Maximal STA connections"
+        default 4
+        help
+            Max number of the STA connects to AP.
+endmenu
